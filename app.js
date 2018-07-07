@@ -6,8 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-require('./models/Recipes');
-require('./models/Ingredients');
+require('./models/Recipe');
+require('./models/Ingredient');
+require('./models/User');
+require('./config/passport');
 
 mongoose.connect('mongodb://localhost/recipes');
 

@@ -4,6 +4,6 @@ var IngredientSchema = new mongoose.Schema({
     name: String,
     recipes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Recipe' }],
     image: Buffer
-});
+}, {timestamps: true});
 
 mongoose.model('Ingredient', IngredientSchema);
